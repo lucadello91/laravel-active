@@ -114,7 +114,7 @@ Compares given array of route names with current route name.
 Compares given array of resource names with current Route::Resource name.
 
 ```php
-{{ Ekko::areActiveRoutes(['post', 'comments']) }}
+{{ Ekko::areActiveRoutesResourcesNames(['post', 'comments']) }}
 ```
 
 #### `areActiveURLs(array $urls, $active = "active", $notActive = "")`

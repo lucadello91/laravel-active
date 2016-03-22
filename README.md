@@ -11,7 +11,7 @@ First, pull in the package through Composer.
 
 ```js
 "require": {
-    "lucadello91/laravel-active": "~1.0"
+    "lucadello91/laravel-active": "dev-master"
 }
 ```
 

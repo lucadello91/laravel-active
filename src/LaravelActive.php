@@ -31,9 +31,9 @@ class LaravelActive {
     public function isActiveRouteResourceName($resourceName, $active = "active", $notActive = "")
     {
 
-        $name = explode(".",Route::getCurrentRoute()->getName())[0];
+        $name = Route::getCurrentRoute()->getName();
 
-        if($name == $resourceName) return $active;
+        if(starts_with($name,$resourceName)) return $active;
 
         return $notActive;
     }
@@ -95,11 +95,11 @@ class LaravelActive {
      */
     public function areActiveRoutesResourcesNames(array $resourcesNames, $active = "active", $notActive = "")
     {
-        $name = explode(".",Route::getCurrentRoute()->getName())[0];
+        $name = Route::getCurrentRoute()->getName();
 
         foreach($resourcesNames as $resourceName)
         {
-            if($name == $resourceName) return $active;
+            if(starts_with($name,$resourceName)) return $active;
         }
 
         return $notActive;

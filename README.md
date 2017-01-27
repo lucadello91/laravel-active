@@ -37,13 +37,13 @@ You would most likely use this package in your `navbar` partial like so:
 
 ```php
 <li>
-    <a href="{{ route('home') }}" class="{{ Ekko::isActiveRoute('home') }}">
+    <a href="{{ route('home') }}" class="{{ Active::isActiveRoute('home') }}">
         <i class="halflings white home"></i> Home
     </a>
 </li>
 
 <li>
-    <a href="#" class="{{ Ekko::areActiveRoutes(['murter', 'kornati']) }}">
+    <a href="#" class="{{ Active::areActiveRoutes(['murter', 'kornati']) }}">
         <i class="halflings white screenshot"></i> Location
     </a>
     <ul>
@@ -74,7 +74,7 @@ As the third parameter to any method, you can pass the value you want to get ret
 Compares given route name with current route name.
 
 ```php
-{{ Ekko::isActiveRoute('home') }}
+{{ Active::isActiveRoute('home') }}
 ```
 
 #### `isActiveRouteResourceName($resourceName, $active = "active", $notActive = "")`
@@ -82,7 +82,7 @@ Compares given route name with current route name.
 Compares given resource name with current Route::Resource name.
 
 ```php
-{{ Ekko::isActiveRouteResourceName('home') }}
+{{ Active::isActiveRouteResourceName('home') }}
 ```
 
 #### `isActiveURL($url, $active = "active", $notActive = "")`
@@ -90,7 +90,7 @@ Compares given resource name with current Route::Resource name.
 Compares given URL with current URL.
 
 ```php
-{{ Ekko::isActiveURL('/about') }}
+{{ Active::isActiveURL('/about') }}
 ```
 
 #### `isActiveMatch($string, $active = "active", $notActive = "")`
@@ -98,7 +98,7 @@ Compares given URL with current URL.
 Detects if the given string is found in the current URL.
 
 ```php
-{{ Ekko::isActiveMatch('bout') }}
+{{ Active::isActiveMatch('bout') }}
 ```
 
 #### `areActiveRoutes(array $routeNames, $active = "active", $notActive = "")`
@@ -106,7 +106,7 @@ Detects if the given string is found in the current URL.
 Compares given array of route names with current route name.
 
 ```php
-{{ Ekko::areActiveRoutes(['product.index', 'product.show']) }}
+{{ Active::areActiveRoutes(['product.index', 'product.show']) }}
 ```
 
 #### `areActiveRoutesResourcesNames(array $resourcesNames, $active = "active", $notActive = "")`
@@ -114,7 +114,7 @@ Compares given array of route names with current route name.
 Compares given array of resource names with current Route::Resource name.
 
 ```php
-{{ Ekko::areActiveRoutesResourcesNames(['post', 'comments']) }}
+{{ Active::areActiveRoutesResourcesNames(['post', 'comments']) }}
 ```
 
 #### `areActiveURLs(array $urls, $active = "active", $notActive = "")`
@@ -122,5 +122,5 @@ Compares given array of resource names with current Route::Resource name.
 Compares given array of URLs with current URL.
 
 ```php
-{{ Ekko::areActiveURLs(['/product', '/product/create']) }}
+{{ Active::areActiveURLs(['/product', '/product/create']) }}
 ```

@@ -57,7 +57,7 @@ You would most likely use this package in your `navbar` partial like so:
 </li>
 
 <li>
-    <a href="{{ route('trips.index') }}" class="{{ Ekko::isActiveMatch('trips') }}">
+    <a href="{{ route('trips.index') }}" class="{{ Active::isActiveMatch('trips') }}">
         <i class="halflings white road"></i> Trips
     </a>
 </li>

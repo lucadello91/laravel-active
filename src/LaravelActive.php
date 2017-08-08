@@ -1,4 +1,4 @@
-<?php namespace Lucadello91\LaravelActive;
+<?php namespace Lucadello91\Active;
 
 use Route;
 use URL;

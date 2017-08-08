@@ -1,6 +1,6 @@
 <?php
 
-namespace Lucadello91\LaravelActive;
+namespace Lucadello91\Active;
 
 use Illuminate\Support\ServiceProvider;
 

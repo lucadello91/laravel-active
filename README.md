@@ -19,7 +19,7 @@ And then, if using Laravel 5 or 4, include the service provider within `app/conf
 
 ```php
 'providers' => [
-    Lucadello91\LaravelActive\LaravelActiveServiceProvider::class
+    Lucadello91\Active\LaravelActiveServiceProvider::class
 ];
 ```
 
@@ -27,7 +27,7 @@ And, for convenience, add a facade alias to this same file at the bottom:
 
 ```php
 'aliases' => [
-    'Active'    => Lucadello91\LaravelActive\Facades\LaravelActive::class
+    'Active'    => Lucadello91\Active\Facades\LaravelActive::class
 ];
 ```
 

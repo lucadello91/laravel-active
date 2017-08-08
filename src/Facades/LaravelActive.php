@@ -1,4 +1,4 @@
-<?php namespace Lucadello91\LaravelActive\Facades;
+<?php namespace Lucadello91\Active\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

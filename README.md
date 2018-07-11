@@ -1,5 +1,9 @@
 # Laravel-Active
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Packagist Version](https://img.shields.io/packagist/v/lucadello91/laravel-active.svg?style=flat-square)](https://packagist.org/packages/lucadello91/laravel-active)
+[![Total Downloads](https://img.shields.io/packagist/dt/lucadello91/laravel-active.svg?style=flat-square)](https://packagist.org/packages/lucadello91/laravel-active)
+
 Laravel helper that detects active navigation menu items and applies bootstrap classes.
 This is an implementation of https://github.com/laravelista/Ekko.
 In this implementation, you can use it with resouce name too.
